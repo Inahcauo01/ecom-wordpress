@@ -457,7 +457,7 @@ abstract class Abstract_Payment_Gateway extends WC_Payment_Gateway {
 			$currency = get_woocommerce_currency();
 		}
 
-		if ( in_array( strtolower( $currency ), self::$zero_currencies, true ) ) {
+		if ( in_array( strtoupper( $currency ), self::$zero_currencies, true ) ) {
 			// Zero decimal currencies accepted by stripe.
 			return absint( $total );
 		} else {
@@ -1060,7 +1060,7 @@ abstract class Abstract_Payment_Gateway extends WC_Payment_Gateway {
 			$currency = get_woocommerce_currency();
 		}
 
-		if ( in_array( strtolower( $currency ), self::$zero_currencies, true ) ) {
+		if ( in_array( strtoupper( $currency ), self::$zero_currencies, true ) ) {
 			// Zero decimal currencies accepted by stripe.
 			return absint( $total );
 		} else {

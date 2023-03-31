@@ -2,8 +2,8 @@
 Contributors: brainstormforce
 Tags: stripe, credit card, apple pay, google pay, express checkout
 Requires at least: 5.4
-Tested up to: 6.1.1
-Stable tag: 1.4.12
+Tested up to: 6.2
+Stable tag: 1.4.13
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -113,6 +113,9 @@ We understand the need for a quality product backed by dedicated support that ca
 4. Express Checkout Button on Checkout Page
 
 == Changelog ==
+= 1.4.13 - WEDNESDAY, 29TH MARCH 2023 =
+* Fix: Stripe zero currencies getting changed 100 times.
+
 = 1.4.12 - WEDNESDAY, 15TH MARCH 2023 =
 * Improvement – Refactored code for plugin security.
 
